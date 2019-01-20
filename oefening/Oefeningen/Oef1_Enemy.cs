@@ -5,25 +5,24 @@ using System.Text;
 using System.Threading.Tasks;
 
 /*
- * 1. Werk de functie ToString() verder uit om ook de Class van de player aan de tekst toe te voegen.
+ * 1. Werk de functie ToString() verder uit om ook het FighterType van de player aan de tekst toe te voegen.
+ *    (Je kan de mogelijke types bekijken in het bestand Enums.cs)
  * 2. In de TestPlayer() functie voeg je nog drie players toe, die je dan ook op het scherm toont:
  *      - een Chtulhu Mage
  *      - een Gnome Priest
  *      - een Troll Warrior
- *      
- * 3. Maak in het bestand Enums.cs een nieuwe enum met de naam Weapon
  */
 
 namespace Game
 {
-	public class Player
+	public class Enemy
 	{
-        public PlayerClass PlayerClass { get; set; }
-        public Race Race { get; set; }
+        public FighterType Type { get; }
+        public Race Race { get; }
 
-        public Player(PlayerClass PlayerClass, Race Race)
+        public Enemy(FighterType Type, Race Race)
         {
-            this.PlayerClass = PlayerClass;
+            this.Type = Type;
             this.Race = Race;
         }
 
@@ -54,10 +53,10 @@ namespace Game
 
     public partial class Test
     {
-        public static void TestPlayer()
+        public static void TestEnemy()
         {
-            var player1 = new Player(PlayerClass.Hunter, Race.Elf);
-            Console.WriteLine(player1);
+            var enemy1 = new Enemy(FighterType.Hunter, Race.Elf);
+            Console.WriteLine(enemy1);
         }
     }
 }

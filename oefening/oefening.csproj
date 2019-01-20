@@ -53,7 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Oefeningen\Enums.cs" />
-    <Compile Include="Oefeningen\Oef1.cs" />
+    <Compile Include="Oefeningen\Oef1_Enemy.cs" />
+    <Compile Include="Oefeningen\Oef2_Room.cs" />
+    <Compile Include="Oefeningen\Oef3_Colors.cs" />
     <Compile Include="Utils\Menu.cs" />
     <Compile Include="Utils\Method.cs" />
     <Compile Include="Utils\Object.cs" />

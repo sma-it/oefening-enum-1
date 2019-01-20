@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    public enum PlayerClass
+    public enum FighterType
     {
         Warrior,
         Hunter,
