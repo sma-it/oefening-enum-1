@@ -22,22 +22,32 @@ namespace Game
 {
     public class Room
     {
+        public RoomSize Size { get; }
 
+        public Room(RoomSize Size)
+        {
+            this.Size = Size;
+        }
+
+        public override string ToString()
+        {
+            if (Size == RoomSize.Small) return "This is a small room.";
+            else if (Size == RoomSize.Medium) return "This is a medium room.";
+            else return "This is a big room.";
+        }
     }
 
     public partial class Test
     {
         public static void TestRoom()
         {
-            var smallRoom = new Room();
-            var mediumRoom = new Room();
-            var bigRoom = new Room();
+            var smallRoom = new Room(RoomSize.Small);
+            var mediumRoom = new Room(RoomSize.Medium);
+            var bigRoom = new Room(RoomSize.Big);
 
             Console.WriteLine(smallRoom);
             Console.WriteLine(mediumRoom);
             Console.WriteLine(bigRoom);
-
-            
         }
     }
 }

@@ -21,4 +21,20 @@ namespace Game
         Elf,
         Cthulhu
     }
+
+    public enum RoomSize
+    {
+        Small,
+        Medium,
+        Big,
+    }
+
+    public enum Colors
+    {
+        Green,
+        Red,
+        Blue,
+        Pink,
+        MaxValue
+    }
 }

@@ -24,7 +24,10 @@ namespace Game
     {
         public static void TestColors()
         {
-
+            for(Colors i = 0; i < Colors.MaxValue; i++)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }

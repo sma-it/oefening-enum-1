@@ -45,6 +45,10 @@ namespace Game
             result += " is a ";
 
             // vul aan met de player class
+            if (Type == FighterType.Hunter) result += "hunter.";
+            else if (Type == FighterType.Mage) result += "mage.";
+            else if (Type == FighterType.Priest) result += "priest.";
+            else if (Type == FighterType.Warrior) result += "warrior.";
 
             return result;
         }
@@ -57,6 +61,14 @@ namespace Game
         {
             var enemy1 = new Enemy(FighterType.Hunter, Race.Elf);
             Console.WriteLine(enemy1);
+
+            var enemy2 = new Enemy(FighterType.Mage, Race.Cthulhu);
+            Console.WriteLine(enemy2);
+
+            // Je kan een nieuw object ook rechtstreeks naar de console sturen,
+            // maar dan kan je er achteraf natuurlijk niets meer meer doen.
+            Console.WriteLine(new Enemy(FighterType.Priest, Race.Gnome));
+            Console.WriteLine(new Enemy(FighterType.Warrior, Race.Troll));
         }
     }
 }
