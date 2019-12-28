@@ -8,7 +8,7 @@ using System.Threading.Tasks;
  * 1. Werk de functie ToString() verder uit om ook het FighterType van de player aan de tekst toe te voegen.
  *    (Je kan de mogelijke types bekijken in het bestand Enums.cs)
  * 2. In de TestPlayer() functie voeg je nog drie players toe, die je dan ook op het scherm toont:
- *      - een Chtulhu Mage
+ *      - een Cthulhu Mage
  *      - een Gnome Priest
  *      - een Troll Warrior
  */
