@@ -37,10 +37,7 @@ namespace Game
         public override string ToString()
         {
             string result = "This ";
-            if (Race == Race.Troll) result += "troll";
-            else if (Race == Race.Gnome) result += "gnome";
-            else if (Race == Race.Elf) result += "elf";
-            else if (Race == Race.Cthulhu) result += "cthulu";
+            result += Race;
 
             result += " is a ";
 
