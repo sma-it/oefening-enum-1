@@ -11,8 +11,8 @@ using System.Threading.Tasks;
  * 2. Geef de Room class hieronder een property 'Size' van het type RoomSize.
  * 
  * 3. Voeg een constructor toe die je verplicht om de grootte van de room
- *    vast te leggen bij het maken van een room. Pas ook de constructors
- *    in de testfunctie aan.
+ *    vast te leggen bij het maken van een room. Pas ook de aanroep van de 
+ *    constructors in de testfunctie aan.
  *    
  * 4. Override de functie ToString(), zodat je een beschrijving van de
  *    room op het scherm kan tonen. Bijvoorbeeld: "This is a small room."
