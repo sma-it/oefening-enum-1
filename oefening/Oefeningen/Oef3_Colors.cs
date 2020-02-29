@@ -13,7 +13,7 @@ namespace Game
      *    ons helpen om alle kleuren op het scherm te tonen.)
      *    
      * 2. Deze oefening heeft geen eigen class. Gebruik rechtstreeks
-     *    de testfunctie om all kleuren op het scherm te tonen, in 
+     *    de testfunctie om alle kleuren op het scherm te tonen, in 
      *    een loop. Je maakt gebruik van MaxValue om het eind van de loop
      *    te bepalen. Je kan de waarden van de enum rechtstreeks
      *    op de console tonen via WriteLine, omdat een enum naar een
